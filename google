@@ -1,0 +1,3 @@
+#!/bin/bash
+searchquery=$(echo $@ | sed -r 's/\ /\+/g')
+sensible-browser https://www.google.ca/search?q=${searchquery}
